@@ -32,12 +32,12 @@ public class HighTouchSensitivity {
 
     private static String TAG = "HighTouchSensitivity";
 
-    private static String COMMAND_PATH = "/sys/class/sec/tsp/cmd";
+    private static String COMMAND_PATH = "/sys/bus/i2c/devices/2-004a/sensitive_mode";
     private static String COMMAND_LIST_PATH = "/sys/class/sec/tsp/cmd_list";
     private static String COMMAND_RESULT_PATH = "/sys/class/sec/tsp/cmd_result";
     private static String GLOVE_MODE = "glove_mode";
-    private static String GLOVE_MODE_ENABLE = "glove_mode,1";
-    private static String GLOVE_MODE_DISABLE = "glove_mode,0";
+    private static String GLOVE_MODE_ENABLE = "1";
+    private static String GLOVE_MODE_DISABLE = "0";
     private static String STATUS_OK = ":OK";
 
     /**
